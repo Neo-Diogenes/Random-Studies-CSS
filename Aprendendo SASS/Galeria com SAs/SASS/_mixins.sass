@@ -1,0 +1,26 @@
+@use 'variaveis'
+
+@mixin container
+    max-width: variaveis.$container-width
+    padding: 1.5rem 0
+    margin: 0 auto
+
+@mixin flex-center 
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+
+@mixin  bg-img
+    height: 400px
+    width: 320px
+    position: absolute
+    z-index: -1
+    filter: grayscale(100%)
+    transition: .2s
+
+    &:hover
+        background-size: 100%
+        filter: grayscale(0%)
+   
